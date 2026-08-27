@@ -7,16 +7,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Anek+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--primary:#E91E63;--secondary:#FF9800;--accent:#FFC107;--blue:#2196F3;--purple:#9C27B0;--teal:#009688;--shadow:0 8px 20px rgba(0,0,0,.15);--radius:20px}
+:root{--primary:#00BCD4;--secondary:#FF4081;--accent:#FFC107;--blue:#03A9F4;--purple:#9C27B0;--teal:#009688;--shadow:0 8px 20px rgba(0,0,0,.15);--radius:20px}
 *{box-sizing:border-box;user-select:none;-webkit-user-select:none;margin:0;padding:0}
-body{background:linear-gradient(180deg,#FCE4EC 0%,#FFF3E0 40%,#fff 70%);min-height:100vh;overflow-x:hidden;color:#263238;font-family:'Quicksand','Segoe UI',sans-serif}
+body{background:linear-gradient(180deg,#E1F5FE 0%,#FFF3E0 40%,#fff 70%);min-height:100vh;overflow-x:hidden;color:#263238;font-family:'Quicksand','Segoe UI',sans-serif}
 h1,h2,h3{font-family:'Baloo 2',cursive}
 .ml{font-family:'Anek Malayalam',sans-serif;font-weight:600}
 #app{position:relative;z-index:1;max-width:1050px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding:15px}
 header{background:rgba(255,255,255,.97);padding:12px 20px;border-radius:var(--radius);box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;flex-wrap:wrap;gap:10px}
 .logo-area{display:flex;align-items:center;gap:10px;cursor:pointer}
 .logo-area h1{font-size:1.25rem;color:var(--primary);font-weight:800}
-.logo-area .sub{font-size:.85rem;color:#C2185B}
+.logo-area .sub{font-size:.85rem;color:#00838F}
 .logo-area span{font-size:.78rem;background:var(--accent);color:#333;padding:3px 10px;border-radius:12px;font-weight:bold}
 .stats-bar{display:flex;align-items:center;gap:15px;background:#FFF9C4;padding:8px 16px;border-radius:30px;border:2px solid #FBC02D;font-weight:bold;font-size:1.05rem}
 .stat-item{display:flex;align-items:center;gap:5px}
@@ -24,28 +24,29 @@ header{background:rgba(255,255,255,.97);padding:12px 20px;border-radius:var(--ra
 .icon-btn{background:#fff;border:2px solid #E0E0E0;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:1.1rem;cursor:pointer;box-shadow:0 3px 6px rgba(0,0,0,.1)}
 .icon-btn:hover{transform:scale(1.1)}
 .progress-container{width:100%;background:rgba(255,255,255,.6);height:10px;border-radius:10px;overflow:hidden;margin-bottom:15px;box-shadow:inset 0 2px 4px rgba(0,0,0,.1)}
-.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#E91E63,#FF9800);transition:width .4s ease}
+.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#00BCD4,#4DD0E1);transition:width .4s ease}
 .screen{display:none;flex-direction:column;align-items:center;width:100%;flex:1;animation:fadeIn .3s ease-in-out}
 .screen.active{display:flex}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .home-card{background:rgba(255,255,255,.95);border-radius:25px;padding:30px 20px;text-align:center;box-shadow:var(--shadow);width:100%;max-width:720px;margin:auto;border:4px solid #fff}
-.main-title{color:#C2185B;font-size:1.9rem;margin-bottom:6px}
+.main-title{color:#0097A7;font-size:1.9rem;margin-bottom:6px}
 .sub-title{color:#E65100;font-size:1.2rem;margin-bottom:8px;font-weight:700}
 .quote-box {background: #FFF9C4; border-left: 5px solid #FFC107; padding: 10px 15px; margin: 15px auto; max-width: 500px; font-style: italic; color: #555; border-radius: 8px;}
 .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;width:100%}
 .btn-menu{padding:16px 18px;border:none;border-radius:20px;font-size:1.02rem;font-weight:bold;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 6px 0 rgba(0,0,0,.2);text-shadow:1px 1px 2px rgba(0,0,0,.3);transition:all .2s;font-family:'Baloo 2',cursive}
 .btn-menu:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.2)}
-.b1{background:linear-gradient(135deg,#E91E63,#C2185B)}.b2{background:linear-gradient(135deg,#FF9800,#F57C00)}
+.b1{background:linear-gradient(135deg,#00BCD4,#0097A7)}.b2{background:linear-gradient(135deg,#FF4081,#F50057)}
 .b3{background:linear-gradient(135deg,#2196F3,#1E88E5)}.b4{background:linear-gradient(135deg,#9C27B0,#8E24AA)}
-.b5{background:linear-gradient(135deg,#009688,#00897B)}.b6{background:linear-gradient(135deg,#FFC107,#FFB300);color:#333;text-shadow:none}
+.b5{background:linear-gradient(135deg,#009688,#00897B)}.b6{background:linear-gradient(135deg,#FF9800,#FB8C00)}
 .b7{background:linear-gradient(135deg,#795548,#6D4C41)}.b8{background:linear-gradient(135deg,#607D8B,#546E7A)}
 .b9{background:linear-gradient(135deg,#3F51B5,#3949AB)}.b10{background:linear-gradient(135deg,#EC407A,#D81B60)}
 .b11{background:linear-gradient(135deg,#8D6E63,#6D4C41)}.b12{background:linear-gradient(135deg,#26C6DA,#00ACC1)}
+.b13{background:linear-gradient(135deg,#7CB342,#558B2F)}.b14{background:linear-gradient(135deg,#FFB300,#FF8F00)}
 .b18{background:linear-gradient(135deg,#26A69A,#00897B)}
-.lesson-pick{background:#fff;border:3px solid #F8BBD0;border-radius:18px;padding:18px 22px;margin-bottom:14px;cursor:pointer;display:flex;align-items:center;gap:14px;box-shadow:0 4px 12px rgba(0,0,0,.08);transition:all .2s;width:100%;max-width:520px}
-.lesson-pick:hover{border-color:#E91E63;background:#FCE4EC;transform:translateY(-3px)}
+.lesson-pick{background:#fff;border:3px solid #80DEEA;border-radius:18px;padding:18px 22px;margin-bottom:14px;cursor:pointer;display:flex;align-items:center;gap:14px;box-shadow:0 4px 12px rgba(0,0,0,.08);transition:all .2s;width:100%;max-width:520px}
+.lesson-pick:hover{border-color:#00BCD4;background:#E0F7FA;transform:translateY(-3px)}
 .lesson-pick .lp-emoji{font-size:2.4rem}
-.lesson-pick .lp-title{font-size:1.2rem;font-weight:800;color:#C2185B;font-family:'Baloo 2',cursive}
+.lesson-pick .lp-title{font-size:1.2rem;font-weight:800;color:#00838F;font-family:'Baloo 2',cursive}
 .lesson-pick .lp-sub{font-size:.9rem;color:#546E7A}
 .section-header{width:100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;background:#fff;padding:12px 20px;border-radius:15px;box-shadow:var(--shadow);flex-wrap:wrap;gap:10px}
 .section-title{font-size:1.15rem;color:var(--primary);font-weight:800;display:flex;align-items:center;gap:8px;font-family:'Baloo 2',cursive}
@@ -54,22 +55,22 @@ header{background:rgba(255,255,255,.97);padding:12px 20px;border-radius:var(--ra
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px;width:100%;padding-bottom:20px}
 .word-card{background:#fff;border-radius:20px;padding:14px;text-align:center;box-shadow:var(--shadow);border:3px solid #fff;transition:all .3s;cursor:pointer;display:flex;flex-direction:column;align-items:center}
 .word-card:hover{transform:translateY(-6px);border-color:var(--accent)}
-.word-card.playing{animation:pulseCard .6s infinite alternate;border-color:var(--primary);background:#FCE4EC}
+.word-card.playing{animation:pulseCard .6s infinite alternate;border-color:var(--primary);background:#E0F7FA}
 @keyframes pulseCard{from{transform:scale(1)}to{transform:scale(1.05)}}
 .card-emoji{font-size:3.4rem;margin-bottom:8px}
-.word-eng{font-size:1.35rem;margin-bottom:6px;font-weight:800;color:#C2185B;font-family:'Baloo 2',cursive}
+.word-eng{font-size:1.35rem;margin-bottom:6px;font-weight:800;color:#00838F;font-family:'Baloo 2',cursive}
 .word-meaning{font-size:.9rem;color:#555;margin-bottom:8px}
-.replay-btn{background:#FCE4EC;color:#C2185B;border:none;padding:5px 12px;border-radius:15px;font-size:.85rem;font-weight:bold;cursor:pointer}
+.replay-btn{background:#E0F7FA;color:#00838F;border:none;padding:5px 12px;border-radius:15px;font-size:.85rem;font-weight:bold;cursor:pointer}
 .story-title-wrap{text-align:center;width:100%;margin-bottom:18px}
-.story-title{text-align:center;font-size:1.5rem;margin-bottom:16px;background:linear-gradient(90deg,#F48FB1,#F06292);display:inline-block;padding:8px 30px;border-radius:30px;color:#880E4F!important;font-family:'Baloo 2',cursive}
-.story-para{background:#FCE4EC;border-left:5px solid var(--primary);padding:14px 18px;border-radius:14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.story-title{text-align:center;font-size:1.5rem;margin-bottom:16px;background:linear-gradient(90deg,#80DEEA,#4DD0E1);display:inline-block;padding:8px 30px;border-radius:30px;color:#006064!important;font-family:'Baloo 2',cursive}
+.story-para{background:#E1F5FE;border-left:5px solid var(--primary);padding:14px 18px;border-radius:14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .story-para p{font-size:1.15rem;line-height:1.9;flex:1;min-width:250px}
 .mini-play{background:var(--primary);color:#fff;border:none;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.1rem;flex-shrink:0}
-.read-all-btn{background:linear-gradient(135deg,#E91E63,#C2185B);color:#fff;border:none;padding:12px 30px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;margin-bottom:18px;box-shadow:0 4px 10px rgba(233,30,99,.4);font-family:'Baloo 2',cursive}
+.read-all-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:12px 30px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;margin-bottom:18px;box-shadow:0 4px 10px rgba(0,188,212,.4);font-family:'Baloo 2',cursive}
 .activity-block{background:#FFF8E1;border:2px solid #FFE082;border-radius:18px;padding:20px;margin-bottom:22px;width:100%}
 .activity-heading{color:#E65100;font-size:1.15rem;margin-bottom:14px;font-weight:800;font-family:'Baloo 2',cursive}
 .activity-sub{font-size:.95rem;color:#455A64;margin-bottom:10px}
-.fillbox{border:2px solid #90A4AE;border-radius:10px;padding:6px 10px;font-size:1rem;font-family:'Quicksand',sans-serif;font-weight:700;color:#C2185B;min-width:110px;text-align:center;background:#fff}
+.fillbox{border:2px solid #90A4AE;border-radius:10px;padding:6px 10px;font-size:1rem;font-family:'Quicksand',sans-serif;font-weight:700;color:#00838F;min-width:110px;text-align:center;background:#fff}
 select.fillbox{cursor:pointer}
 .check-btn{background:var(--primary);color:#fff;border:none;padding:8px 22px;border-radius:20px;font-weight:bold;cursor:pointer;margin-top:8px;font-family:'Baloo 2',cursive}
 .result-msg{font-weight:bold;margin-top:8px;font-size:1.02rem}
@@ -77,20 +78,20 @@ select.fillbox{cursor:pointer}
 .reveal-model-btn{background:var(--purple);color:#fff;border:none;padding:8px 20px;border-radius:18px;font-size:.9rem;cursor:pointer;margin-top:6px;font-family:'Baloo 2',cursive;font-weight:bold}
 .write-box{width:100%;min-height:80px;border:2px dashed #90A4AE;border-radius:12px;padding:10px 14px;font-size:1rem;font-family:'Quicksand',sans-serif;margin-bottom:10px;resize:vertical}
 .game-box{background:rgba(255,255,255,.95);border-radius:25px;padding:25px;box-shadow:var(--shadow);width:100%;max-width:750px;margin:0 auto;display:flex;flex-direction:column;align-items:center;border:4px solid #fff}
-.game-instruction{font-size:1.05rem;color:#37474F;margin-bottom:20px;text-align:center;background:#FCE4EC;padding:8px 20px;border-radius:20px;font-weight:bold;font-family:'Baloo 2',cursive}
+.game-instruction{font-size:1.05rem;color:#37474F;margin-bottom:20px;text-align:center;background:#E1F5FE;padding:8px 20px;border-radius:20px;font-weight:bold;font-family:'Baloo 2',cursive}
 .g1-image-box{width:170px;height:170px;background:#F5F5F5;border-radius:20px;display:flex;justify-content:center;align-items:center;margin-bottom:22px;border:3px solid #E0E0E0;padding:10px;font-size:5rem}
 .options-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;width:100%;max-width:480px}
-.meaning-box{font-size:1.4rem;font-weight:800;color:#C2185B;background:#FCE4EC;padding:16px 30px;border-radius:20px;margin-bottom:22px;border:2px dashed #E91E63;text-align:center}
-.listen-btn-big{background:linear-gradient(135deg,#E91E63,#C2185B);color:#fff;border:none;width:96px;height:96px;border-radius:50%;font-size:2.6rem;cursor:pointer;margin-bottom:22px;box-shadow:0 6px 0 #880E4F}
-.listen-btn-big:active{transform:translateY(4px);box-shadow:0 2px 0 #880E4F}
-.option-btn{background:#fff;border:3px solid #F48FB1;padding:14px;border-radius:18px;font-size:1.3rem;font-weight:bold;color:#C2185B!important;cursor:pointer;box-shadow:0 4px 0 #F06292;font-family:'Baloo 2',cursive}
-.option-btn:hover{background:#FCE4EC}
+.meaning-box{font-size:1.4rem;font-weight:800;color:#00838F;background:#E1F5FE;padding:16px 30px;border-radius:20px;margin-bottom:22px;border:2px dashed #00BCD4;text-align:center}
+.listen-btn-big{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;width:96px;height:96px;border-radius:50%;font-size:2.6rem;cursor:pointer;margin-bottom:22px;box-shadow:0 6px 0 #006064}
+.listen-btn-big:active{transform:translateY(4px);box-shadow:0 2px 0 #006064}
+.option-btn{background:#fff;border:3px solid #80DEEA;padding:14px;border-radius:18px;font-size:1.3rem;font-weight:bold;color:#00838F!important;cursor:pointer;box-shadow:0 4px 0 #4DD0E1;font-family:'Baloo 2',cursive}
+.option-btn:hover{background:#E1F5FE}
 .option-btn.correct{background:#C8E6C9!important;border-color:#4CAF50!important;color:#2E7D32!important;box-shadow:0 4px 0 #388E3C!important}
 .option-btn.wrong{background:#FFCDD2!important;border-color:#F44336!important;color:#C62828!important;box-shadow:0 4px 0 #D32F2F!important}
 .match-container{display:flex;justify-content:space-between;width:100%;gap:18px;margin-bottom:18px}
 .match-column{display:flex;flex-direction:column;gap:14px;flex:1}
 .match-item{background:#fff;border:3px solid #CFD8DC;border-radius:15px;padding:10px;display:flex;align-items:center;justify-content:center;min-height:78px;cursor:pointer}
-.match-item:hover{border-color:var(--primary);background:#FCE4EC}
+.match-item:hover{border-color:var(--primary);background:#E1F5FE}
 .match-item.selected{border-color:var(--accent);background:#FFF8E1}
 .match-item.matched{border-color:#4CAF50;background:#E8F5E9;opacity:.6;pointer-events:none}
 .match-item.wrong{border-color:#F44336!important;background:#FFCDD2!important}
@@ -103,10 +104,10 @@ select.fillbox{cursor:pointer}
 .quiz-q .qtext{font-size:1.1rem;margin-bottom:12px;font-weight:bold}
 .quiz-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .quiz-opt{background:#F5F5F5;border:2px solid #E0E0E0;border-radius:12px;padding:10px;cursor:pointer;text-align:center;font-size:1rem}
-.quiz-opt.picked{border-color:var(--primary);background:#FCE4EC}
+.quiz-opt.picked{border-color:var(--primary);background:#E1F5FE}
 .quiz-opt.correct-ans{border-color:#4CAF50;background:#C8E6C9}
 .quiz-opt.wrong-ans{border-color:#F44336;background:#FFCDD2}
-.submit-quiz-btn{background:linear-gradient(135deg,#E91E63,#C2185B);color:#fff;border:none;padding:14px 40px;border-radius:25px;font-size:1.1rem;font-weight:bold;cursor:pointer;margin-top:10px;box-shadow:0 4px 10px rgba(233,30,99,.4);font-family:'Baloo 2',cursive}
+.submit-quiz-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:14px 40px;border-radius:25px;font-size:1.1rem;font-weight:bold;cursor:pointer;margin-top:10px;box-shadow:0 4px 10px rgba(0,188,212,.4);font-family:'Baloo 2',cursive}
 .quiz-score-box{background:#FFF9C4;border:2px solid #FBC02D;border-radius:18px;padding:18px;text-align:center;font-size:1.2rem;font-weight:bold;margin-bottom:18px}
 table.vocab-table{width:100%;border-collapse:collapse}
 .vocab-table th{background:var(--primary);color:#fff;padding:10px;font-size:.95rem;font-family:'Baloo 2',cursive}
@@ -117,18 +118,18 @@ table.vocab-table{width:100%;border-collapse:collapse}
 .modal-overlay.active{display:flex}
 .reward-card{background:#fff;border-radius:30px;padding:30px;text-align:center;max-width:480px;width:100%;box-shadow:0 20px 40px rgba(0,0,0,.3);border:5px solid #FFD54F}
 .reward-icon{font-size:3.6rem;margin-bottom:10px}
-.reward-title{color:#C2185B;font-size:1.9rem;margin-bottom:8px}
+.reward-title{color:#00838F;font-size:1.9rem;margin-bottom:8px}
 .reward-subtitle{color:#E65100;font-size:1.1rem;margin-bottom:18px}
-.primary-action-btn{background:linear-gradient(135deg,#E91E63,#C2185B);color:#fff;border:none;padding:12px 28px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;font-family:'Baloo 2',cursive}
+.primary-action-btn{background:linear-gradient(135deg,#00BCD4,#00838F);color:#fff;border:none;padding:12px 28px;border-radius:25px;font-size:1.05rem;font-weight:bold;cursor:pointer;font-family:'Baloo 2',cursive}
 .instructions-list{text-align:left;line-height:1.9;font-size:1rem;background:#F5F5F5;padding:20px;border-radius:15px;width:100%}
 .instructions-list li{margin-bottom:8px}
-.qa-line{background:#FCE4EC;border-radius:12px;padding:10px 16px;margin-bottom:10px}
-.qa-line .q{font-weight:bold;color:#880E4F!important}
+.qa-line{background:#E1F5FE;border-radius:12px;padding:10px 16px;margin-bottom:10px}
+.qa-line .q{font-weight:bold;color:#006064!important}
 .qa-line .a{display:none;color:#BF360C!important;margin-top:6px}
 .qa-line .a.show{display:block}
 .reveal-btn{background:var(--purple);color:#fff;border:none;padding:6px 16px;border-radius:14px;font-size:.85rem;cursor:pointer;margin-top:6px;font-family:'Baloo 2',cursive}
-.qp-section{background:#FCE4EC;border:2px solid #F48FB1;border-radius:16px;padding:18px;margin-bottom:18px}
-.qp-heading{color:#C2185B;font-size:1.1rem;font-weight:800;margin-bottom:12px;border-bottom:2px dashed #F48FB1;padding-bottom:6px;font-family:'Baloo 2',cursive}
+.qp-section{background:#E1F5FE;border:2px solid #80DEEA;border-radius:16px;padding:18px;margin-bottom:18px}
+.qp-heading{color:#00838F;font-size:1.1rem;font-weight:800;margin-bottom:12px;border-bottom:2px dashed #80DEEA;padding-bottom:6px;font-family:'Baloo 2',cursive}
 .qp-q{background:#fff;border-radius:12px;padding:12px 16px;margin-bottom:12px;border-left:4px solid var(--primary);font-size:1.02rem;line-height:1.7}
 .qp-q .qnum{font-weight:bold;color:var(--primary)}
 .unit-qp-paper{background:#fff;border:2px solid #333;border-radius:8px;padding:28px 32px;font-family:'Times New Roman',Times,serif;color:#111;line-height:1.6}
@@ -136,12 +137,10 @@ table.vocab-table{width:100%;border-collapse:collapse}
 .unit-qp-paper .qp-title{text-align:center;font-size:1.35rem;font-weight:bold;margin:8px 0 4px;text-decoration:underline}
 .unit-qp-paper .qp-meta{display:flex;justify-content:space-between;flex-wrap:wrap;font-size:.95rem;margin:12px 0 18px;border-bottom:2px solid #333;padding-bottom:10px}
 .unit-qp-paper .qp-act{margin-bottom:22px}
-.unit-qp-paper .qp-act-h{font-weight:bold;font-size:1.05rem;margin-bottom:8px;border-left:4px solid #C2185B;padding-left:10px}
+.unit-qp-paper .qp-act-h{font-weight:bold;font-size:1.05rem;margin-bottom:8px;border-left:4px solid #00838F;padding-left:10px}
 .unit-qp-paper .qp-act p,.unit-qp-paper .qp-act li{font-size:1rem;margin-bottom:6px}
 .unit-qp-paper .qp-lines{border-bottom:1px dotted #999;height:22px;margin:4px 0}
 .unit-qp-paper .qp-footer{text-align:center;margin-top:24px;font-size:.9rem;border-top:1px solid #999;padding-top:10px}
-.drag-box{display:flex;gap:10px;flex-wrap:wrap;padding:15px;background:#fff;border:2px dashed #ccc;border-radius:10px;min-height:60px;justify-content:center}
-.drag-item{background:#FFF9C4;padding:8px 15px;border-radius:15px;border:2px solid #FBC02D;cursor:grab;font-weight:bold;color:#E65100}
 @media print{
 header,.progress-container,.section-header,.controls,.btn-menu,.home-card .menu-grid,.listen-btn-big,.reveal-model-btn,.reveal-btn,.check-btn,.submit-quiz-btn,.replay-btn,.mini-play,.read-all-btn,.no-print{display:none!important}
 body{background:#fff!important}
@@ -173,7 +172,7 @@ body{background:#fff!important}
 <!-- HOME -->
 <div id="homeScreen" class="screen active">
 <div class="home-card">
-<h1 class="main-title">💖 Tender Touch</h1>
+<h1 class="main-title">🎉 Tender Touch</h1>
 <h2 class="sub-title">UNIT 1 : TENDER TOUCH</h2>
 <div class="quote-box ml">"Give your hands to serve, and your hearts to love." - Mother Teresa</div>
 <div class="menu-grid">
@@ -186,7 +185,9 @@ body{background:#fff!important}
 <button class="btn-menu b18" onclick="showScreen('unitQPScreen')">📄 Unit Question Paper</button>
 <button class="btn-menu b7" onclick="openChoose('vocab')">📚 Vocabulary</button>
 <button class="btn-menu b9" onclick="openChoose('recast')">📔 Recast Story</button>
-<button class="btn-menu b12" onclick="openChoose('diary')">💭 My Thoughts / Diary</button>
+<button class="btn-menu b12" onclick="openChoose('kitchen')">🍽️ Kitchen Items</button>
+<button class="btn-menu b13" onclick="openChoose('poem_complete')">✍️ Complete Poem</button>
+<button class="btn-menu b11" onclick="openChoose('rhyming')">🔤 Rhyming Words</button>
 <button class="btn-menu b8" onclick="showScreen('instructionsScreen')">ℹ️ Instructions</button>
 </div>
 </div>
@@ -214,7 +215,7 @@ body{background:#fff!important}
 <div id="game1Screen" class="screen"><div class="game-box"><div class="game-instruction">🎮 Guess the correct word!</div><div class="g1-image-box" id="g1ImgBox"></div><div class="options-grid" id="g1OptionsGrid"></div></div></div>
 <div id="game2Screen" class="screen"><div class="game-box"><div class="game-instruction">🔗 Match word with meaning!</div><div class="match-container"><div class="match-column" id="g2PicsCol"></div><div class="match-column" id="g2WordsCol"></div></div></div></div>
 <div id="game7Screen" class="screen"><div class="game-box"><div class="game-instruction">📋 Arrange events in order!</div><div id="g7SeqList" style="width:100%"></div><button class="check-btn" onclick="checkSequence()">✅ Check Order</button><div class="result-msg" id="g7Result"></div></div></div>
-<div id="game8Screen" class="screen"><div class="game-box"><div class="game-instruction">🎭 Who said / did this?</div><div class="meaning-box" id="g8QuoteBox" style="font-size:1.15rem"></div><div class="options-grid" id="g8OptionsGrid"></div></div></div>
+<div id="game8Screen" class="screen"><div class="game-box"><div class="game-instruction">🎭 Who said it?</div><div class="meaning-box" id="g8QuoteBox" style="font-size:1.15rem"></div><div class="options-grid" id="g8OptionsGrid"></div></div></div>
 <div id="game10Screen" class="screen"><div class="game-box"><div class="game-instruction">📝 Complete the sentence!</div><div class="meaning-box" id="g10SentBox" style="font-size:1.15rem"></div><div class="options-grid" id="g10OptionsGrid"></div></div></div>
 
 <div id="modelQPScreen" class="screen"><div class="section-header"><div class="section-title">📋 Model Question Paper</div><button class="back-btn" onclick="showScreen('homeScreen')">Back</button></div><div class="content-box" id="modelQPContainer"></div></div>
@@ -236,8 +237,8 @@ body{background:#fff!important}
 <div class="content-box"><div class="instructions-list ml"><ul>
 <li>Choose a category from the Home screen.</li>
 <li>Select one of the stories or poems to proceed.</li>
-<li><b>Stories:</b> "Tender Touch" (Sasha & Kabitha) and "The Boy and the Bird" (Rinku).</li>
-<li><b>Poem:</b> "Let's be friends".</li>
+<li><b>Stories:</b> "Tender Touch" and "The Boy and the Bird".</li>
+<li><b>Poems:</b> "Let's be Friends".</li>
 <li>Explore Activities, Games, and Quizzes related to each part.</li>
 <li>Use the 'Model Question Paper' and 'Unit Question Paper' for practice.</li>
 </ul></div></div>
@@ -250,50 +251,216 @@ body{background:#fff!important}
 let state={score:0,lives:5,stars:0,audioEnabled:true,activeGame:null,currentGameIndex:0,gameQueue:[],quizSubmitted:false,currentSection:null,currentLesson:null,lastChooseSection:null,visited:{}};
 
 const LESSONS=[
-{id:'tender',emoji:'👧',title:'Tender Touch',sub:'Sasha and Kabitha'},
-{id:'friends',emoji:'🤝',title:'Let\'s Be Friends',sub:'Poem'},
-{id:'bird',emoji:'🐦',title:'The Boy and the Bird',sub:'Rinku helps a blind bird'}
+{id:'tender_touch',emoji:'👧',title:'Tender Touch',sub:'A story of kindness'},
+{id:'boy_and_bird',emoji:'🐦',title:'The Boy and the Bird',sub:'A story of Rinku'},
+{id:'lets_be_friends',emoji:'🤝',title:'Let\'s be Friends',sub:'Poem about sharing'}
 ];
 
-const SECTION_TITLES={read:'📖 Choose a Lesson to Read',learn:'🗂️ Learn Words',activities:'📝 Activities',games:'🎮 Games',quiz:'❓ Quiz',vocab:'📚 Vocabulary',recast:'📔 Recast Story',diary:'💭 My Thoughts / Diary'};
+const SECTION_TITLES={read:'📖 Choose a Lesson to Read',learn:'🗂️ Learn Words',activities:'📝 Activities',games:'🎮 Games',quiz:'❓ Quiz',vocab:'📚 Vocabulary',recast:'📔 Recast Story',kitchen:'🍽️ Kitchen Items',poem_complete:'✍️ Complete Poem',rhyming:'🔤 Rhyming Words'};
 
-let audioCtx=null,chosenVoice=null;
+let audioCtx=null,chosenVoice=null,currentAudio=null;
+
 function initAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)()}
-function playSound(type){if(!state.audioEnabled)return;initAudio();const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.connect(gain);gain.connect(audioCtx.destination);const now=audioCtx.currentTime;if(type==='correct'){osc.type='sine';osc.frequency.setValueAtTime(523.25,now);osc.frequency.exponentialRampToValueAtTime(783.99,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.4);osc.start(now);osc.stop(now+.4)}else if(type==='wrong'){osc.type='sawtooth';osc.frequency.setValueAtTime(220,now);osc.frequency.linearRampToValueAtTime(130,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.35);osc.start(now);osc.stop(now+.35)}else if(type==='click'){osc.type='triangle';osc.frequency.setValueAtTime(400,now);gain.gain.setValueAtTime(.15,now);gain.gain.exponentialRampToValueAtTime(.01,now+.08);osc.start(now);osc.stop(now+.08)}else if(type==='fanfare'){[523.25,659.25,783.99,1046.5].forEach((f,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.frequency.setValueAtTime(f,now+i*.12);g.gain.setValueAtTime(.2,now+i*.12);g.gain.exponentialRampToValueAtTime(.01,now+i*.12+.3);o.start(now+i*.12);o.stop(now+i*.12+.3)})}}
-function pickVoice(){if(!('speechSynthesis'in window))return null;const voices=window.speechSynthesis.getVoices();if(!voices.length)return null;chosenVoice=voices.find(v=>v.lang==='en-IN')||voices.find(v=>v.lang==='en-GB')||voices.find(v=>v.lang&&v.lang.startsWith('en'))||voices[0];return chosenVoice}
-function speakText(text,onend){if(!state.audioEnabled){if(onend)onend();return}if('speechSynthesis'in window){window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-IN';u.rate=.92;u.pitch=1.05;const v=chosenVoice||pickVoice();if(v)u.voice=v;if(onend)u.onend=onend;u.onerror=function(){if(onend)onend()};window.speechSynthesis.speak(u)}else if(onend)onend()}
-function toggleAudio(){state.audioEnabled=!state.audioEnabled;document.getElementById('btnAudioToggle').innerText=state.audioEnabled?'🔊':'🔇';if(!state.audioEnabled)window.speechSynthesis.cancel()}
-function toggleFullscreen(){if(!document.fullscreenElement){document.documentElement.requestFullscreen().catch(()=>{})}else if(document.exitFullscreen){document.exitFullscreen()}}
+
+function playSound(type){
+    if(!state.audioEnabled)return;
+    initAudio();
+    const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+    osc.connect(gain);gain.connect(audioCtx.destination);
+    const now=audioCtx.currentTime;
+    if(type==='correct'){osc.type='sine';osc.frequency.setValueAtTime(523.25,now);osc.frequency.exponentialRampToValueAtTime(783.99,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.4);osc.start(now);osc.stop(now+.4)}
+    else if(type==='wrong'){osc.type='sawtooth';osc.frequency.setValueAtTime(220,now);osc.frequency.linearRampToValueAtTime(130,now+.3);gain.gain.setValueAtTime(.3,now);gain.gain.exponentialRampToValueAtTime(.01,now+.35);osc.start(now);osc.stop(now+.35)}
+    else if(type==='click'){osc.type='triangle';osc.frequency.setValueAtTime(400,now);gain.gain.setValueAtTime(.15,now);gain.gain.exponentialRampToValueAtTime(.01,now+.08);osc.start(now);osc.stop(now+.08)}
+    else if(type==='fanfare'){[523.25,659.25,783.99,1046.5].forEach((f,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.frequency.setValueAtTime(f,now+i*.12);g.gain.setValueAtTime(.2,now+i*.12);g.gain.exponentialRampToValueAtTime(.01,now+i*.12+.3);o.start(now+i*.12);o.stop(now+i*.12+.3)})}
+}
+
+function pickVoice(){
+    if(!('speechSynthesis'in window))return null;
+    const voices=window.speechSynthesis.getVoices();
+    if(!voices.length)return null;
+    chosenVoice=voices.find(v=>v.lang==='en-IN')||voices.find(v=>v.lang==='en-GB')||voices.find(v=>v.lang&&v.lang.startsWith('en'))||voices[0];
+    return chosenVoice;
+}
+
+// Fixed for App WebViews: Uses HTML5 Audio with Google Translate TTS as primary, with SpeechSynthesis API as fallback.
+function speakText(text, onend) {
+    if (!state.audioEnabled) {
+        if (onend) onend();
+        return;
+    }
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+    }
+
+    try {
+        const safeText = text.substring(0, 199); // Google TTS limit
+        const url = "https://translate.google.com/translate_tts?ie=UTF-8&tl=en-IN&client=tw-ob&q=" + encodeURIComponent(safeText);
+        currentAudio = new Audio(url);
+        
+        currentAudio.onended = () => { if (onend) onend(); };
+        currentAudio.onerror = () => { fallbackTTS(text, onend); };
+        
+        const playPromise = currentAudio.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(e => {
+                fallbackTTS(text, onend);
+            });
+        }
+    } catch (e) {
+        fallbackTTS(text, onend);
+    }
+}
+
+function fallbackTTS(text, onend) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-IN';
+        u.rate = 0.92;
+        u.pitch = 1.05;
+        const v = chosenVoice || pickVoice();
+        if (v) u.voice = v;
+        if (onend) u.onend = onend;
+        u.onerror = function() { if (onend) onend(); };
+        window.speechSynthesis.speak(u);
+    } else {
+        if (onend) onend();
+    }
+}
+
+function toggleAudio(){
+    state.audioEnabled=!state.audioEnabled;
+    document.getElementById('btnAudioToggle').innerText=state.audioEnabled?'🔊':'🔇';
+    if(!state.audioEnabled) {
+        window.speechSynthesis.cancel();
+        if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+    }
+}
+
+function toggleFullscreen(){
+    if(!document.fullscreenElement){document.documentElement.requestFullscreen().catch(()=>{})}
+    else if(document.exitFullscreen){document.exitFullscreen()}
+}
+
 function printPage(){playSound('click');window.print()}
-function downloadPage(){playSound('click');try{const htmlContent="<!DOCTYPE html>\n"+document.documentElement.outerHTML;const blob=new Blob([htmlContent],{type:'text/html'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Tender_Touch_STD3_Unit1.html';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(()=>URL.revokeObjectURL(url),3000)}catch(e){alert('Download not supported. Use Print.')}}
-function updateStatsUI(){document.getElementById('valScore').innerText=state.score;document.getElementById('valLives').innerText=state.lives;document.getElementById('valStars').innerText=state.stars;document.getElementById('progressBar').style.width=Math.min(100,state.score/2.5)+'%'}
+function downloadPage(){
+    playSound('click');
+    try{
+        const htmlContent="<!DOCTYPE html>\n"+document.documentElement.outerHTML;
+        const blob=new Blob([htmlContent],{type:'text/html'});
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement('a');
+        a.href=url;
+        a.download='Tender_Touch_STD3_Unit1.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(()=>URL.revokeObjectURL(url),3000)
+    }catch(e){alert('Download not supported. Use Print.')}
+}
+
+function updateStatsUI(){
+    document.getElementById('valScore').innerText=state.score;
+    document.getElementById('valLives').innerText=state.lives;
+    document.getElementById('valStars').innerText=state.stars;
+    document.getElementById('progressBar').style.width=Math.min(100,state.score/2.5)+'%';
+}
+
 function showRewardModal(){playSound('fanfare');document.getElementById('rewardModal').classList.add('active')}
 function closeRewardModal(){document.getElementById('rewardModal').classList.remove('active');showScreen('homeScreen')}
-function revealModel(id,btn){const el=document.getElementById(id);const showing=el.style.display==='block';el.style.display=showing?'none':'block';if(!showing){state.score+=5;updateStatsUI();if(btn)btn.innerText='🙈 Hide Answer'}else if(btn){btn.innerText='💡 Show Answer'}}
-function genericCheck(selClass,resultId){const sels=document.querySelectorAll('.'+selClass);let correct=0;sels.forEach(s=>{if(s.value.toLowerCase().trim()===s.dataset.ans.toLowerCase().trim()){s.style.borderColor='#4CAF50';correct++}else{s.style.borderColor='#F44336'}});const r=document.getElementById(resultId);r.style.color=correct===sels.length?'#2E7D32':'#C62828';r.innerText=`Score: ${correct}/${sels.length}  ${correct===sels.length?'Excellent!':'Try again!'}`;if(correct===sels.length){state.score+=15;state.stars+=1;updateStatsUI();playSound('correct')}else{playSound('wrong')}}
 
-const STORY_TENDER = [
-    "The morning sun peeped through the window. 'Sasha, Sasha, it's getting late, dear,' Mother called in a soft voice.",
-    "Sasha was half asleep. 'Oh, Amma, let me sleep a little longer.'",
-    "Sasha got out of bed, rubbing her eyes. 'What's that smell? Lovely!' She rushed to the kitchen.",
-    "Father was busy in the kitchen. 'Sasha, your favourite snack is ready,' he said.",
-    "'Amma, shall I take some of it to school?' Sasha asked. 'Sure dear,' Mother said.",
-    "Sasha and Naveen reached school. Sasha took out the tiffin box and opened it. 'Wow! Unniyappam!' Naveen exclaimed.",
-    "At that moment, someone appeared at the window. Naveen saw a girl in torn clothes looking tired.",
-    "Sasha went to the window and offered an unniyappam to the girl. But the girl ran away into the bushes.",
-    "Later, Anu teacher was singing a song. Sasha saw the girl again, but hearing the teacher, she ran away.",
-    "After school, Sasha and Naveen heard someone singing the teacher's song. They found the girl cradling her little brother.",
-    "Sasha opened her bag and gave the girl a picture story book as a gift. The girl smiled.",
-    "Sasha and Naveen told Anu teacher. The next day, the headmaster introduced Kabitha in the school assembly in uniform.",
-    "The headmaster congratulated Sasha and Naveen. Anu teacher hugged Kabitha. Kabitha smiled with tears of joy."
+function revealModel(id,btn){
+    const el=document.getElementById(id);
+    const showing=el.style.display==='block';
+    el.style.display=showing?'none':'block';
+    if(!showing){
+        state.score+=5;
+        updateStatsUI();
+        if(btn)btn.innerText='🙈 Hide Answer';
+    }else if(btn){
+        btn.innerText='💡 Show Answer';
+    }
+}
+
+function genericCheck(selClass,resultId){
+    const sels=document.querySelectorAll('.'+selClass);
+    let correct=0;
+    sels.forEach(s=>{
+        if(s.value.toLowerCase().trim()===s.dataset.ans.toLowerCase().trim()){
+            s.style.borderColor='#4CAF50';
+            correct++;
+        }else{
+            s.style.borderColor='#F44336';
+        }
+    });
+    const r=document.getElementById(resultId);
+    r.style.color=correct===sels.length?'#2E7D32':'#C62828';
+    r.innerText=`Score: ${correct}/${sels.length}  ${correct===sels.length?'Excellent!':'Try again!'}`;
+    if(correct===sels.length){
+        state.score+=15;state.stars+=1;updateStatsUI();playSound('correct');
+    }else{
+        playSound('wrong');
+    }
+}
+
+const STORY_TENDER_TOUCH = [
+    "The morning sun peeped through the window.",
+    "'Sasha, Sasha, it's getting late, dear.' Mother called Sasha in a soft voice. She was half asleep.",
+    "'Oh, Amma, let me sleep a little longer.'",
+    "'No dear, it's already late.' Mother came in and gently patted her. Sasha got out of bed, rubbing her eyes.",
+    "'What's that smell? Lovely!' She took a deep breath. She rushed to the kitchen. Mother followed her.",
+    "Father was busy in the kitchen. 'Sasha, your favourite snack is ready.' He said.",
+    "'Amma, shall I take some of it to school?' Sasha asked.",
+    "'Sure dear, go and get ready.' Mother said. She went to the washroom, humming a tune.",
+    "'Sasha, aren't you ready yet?' It was Naveen, her friend. He was waiting at the gate.",
+    "'Just five minutes!' Sasha hurried up.",
+    "Sasha and Naveen reached school just before the bell rang. 'It smells nice! What's in your bag?' Naveen asked.",
+    "'It's a surprise! Wait for a while.' Sasha took out the tiffin box and opened it. 'Wow! Unniyappam!' Naveen exclaimed.",
+    "'Wait, don't rush. There's enough for everyone.' Naveen said.",
+    "At that moment, someone appeared at the window. 'Hey, who is that?' Sasha asked.",
+    "The girl was looking at them curiously. Her messy hair was swinging in the wind. She looked very tired.",
+    "Sasha went to the window. She offered an unniyappam to the girl. But the girl ran away without taking it.",
+    "'Where does she live?' Sasha asked. 'I don't know,' Naveen said. 'Poor girl! Her clothes are torn,' Sasha said.",
+    "After school, Sasha and Naveen were walking home. On the way, they heard someone singing a song.",
+    "'That's the song our teacher taught us today!' Naveen replied.",
+    "They spotted the girl near a tree. She was cradling her little brother, singing the song. The girl saw them and smiled.",
+    "Sasha opened her bag and took out a picture story book. 'Here's a gift for you,' Sasha handed it over to her.",
+    "The girl wiped her hands on her skirt. She received the book with a smile.",
+    "The next day, the headmaster introduced Kabitha in the school assembly. 'Dear children, today we have a new friend.'",
+    "'I congratulate Sasha and Naveen. They helped Kabitha to join us.' The headmaster encouraged, clapping hands.",
+    "Anupama teacher came forward and hugged Kabitha. The girl smiled. A tiny drop of tear glittered in the corner of her eyes."
 ];
 
-const QA_TENDER = [
-    ["Why did Sasha rush to the kitchen?", "She smelled her favourite snack being cooked."],
-    ["What did Sasha offer the girl at the window?", "She offered her an unniyappam."],
-    ["Why did the girl run away from the window?", "She might have been scared or shy."],
-    ["What gift did Sasha give to Kabitha?", "A picture story book."],
-    ["Why was Kabitha crying tears of joy?", "Because she was welcomed to the school, given a uniform, and felt loved by everyone."]
+const QA_TENDER_TOUCH = [
+    ["Why did Sasha rush to the kitchen?", "To find out where the lovely smell was coming from."],
+    ["What was Sasha's favourite snack?", "Unniyappam."],
+    ["Why didn't the girl accept the unniyappam?", "She might have been shy or afraid."],
+    ["What did Sasha gift Kabitha?", "A picture story book."],
+    ["Why did the headmaster congratulate Sasha and Naveen?", "Because they helped Kabitha join the school."]
+];
+
+const STORY_BOY_BIRD = [
+    "This is Rinku. All his friends have gone home from school. He is waiting for his father.",
+    "'Keeyo..Keeyo...,' Rinku heard a sound. It was the cry of a little bird. It came from a pile of dry leaves.",
+    "Rinku sat on his knees. He groped through the leaves. His hands stumbled on a poor little bird.",
+    "'Meow...Meow...,' Rinku felt the presence of a cat.",
+    "'Will it catch the chick?' He worried. He threw a stone at the cat.",
+    "Rinku gently picked the baby bird. 'Where is its nest? Where is the mother bird?'",
+    "He listened carefully. Finally, he located the tree.",
+    "Rinku put the bird in his pocket. He climbed on to the top of the tree.",
+    "He felt the branches and leaves with his hands to find the nest. At last, he found the nest.",
+    "Rinku took the bird out of his pocket. He carefully placed it in the nest.",
+    "The baby bird chirped happily.",
+    "The mother bird looked at the boy thankfully. But he couldn't see the bird. He was blind!"
+];
+
+const QA_BOY_BIRD = [
+    ["Where did the cry of the little bird come from?", "It came from a pile of dry leaves."],
+    ["Why did Rinku throw a stone at the cat?", "He threw a stone at the cat to protect the baby bird."],
+    ["Where did Rinku put the baby bird while climbing?", "He put the baby bird in his pocket."],
+    ["How did Rinku find the nest?", "He listened carefully and felt the branches with his hands."],
+    ["Why couldn't Rinku see the mother bird?", "Because he was blind."]
 ];
 
 const POEM_FRIENDS = [
@@ -307,76 +474,95 @@ const POEM_FRIENDS = [
     "Sharing is caring, that's what we do!"
 ];
 
-const STORY_BIRD = [
-    "This is Rinku. All his friends have gone home from school.",
-    "He is waiting for his father.",
-    "'Keeyo..Keeyo...', Rinku heard a sound. It was the cry of a little bird.",
-    "It came from a pile of dry leaves.",
-    "Rinku sat on his knees. He groped through the leaves.",
-    "His hands stumbled on a poor little bird.",
-    "'Meow...Meow...', Rinku felt the presence of a cat. He threw a stone at the cat to save the bird.",
-    "Rinku gently picked the baby bird. He listened carefully and located the tree where the nest was.",
-    "He put the bird in his pocket, climbed the tree, and carefully placed the baby bird in the nest.",
-    "The mother bird looked at the boy thankfully. But she couldn't see the bird. She was blind!"
-];
-
-const QA_BIRD = [
-    ["Where did Rinku hear the bird's cry from?", "From a pile of dry leaves."],
-    ["Why did Rinku throw a stone at the cat?", "To save the baby bird from the cat."],
-    ["How did Rinku carry the bird up the tree?", "He put the bird in his pocket."],
-    ["Why couldn't the mother bird see her baby?", "Because the mother bird was blind."]
-];
-
 const VOCAB_LIST = [
     {word: 'accept', meaning: 'to receive', emoji: '🤲'},
     {word: 'applaud', meaning: 'to clap hands', emoji: '👏'},
-    {word: 'appreciate', meaning: 'to congratulate', emoji: '👍'},
-    {word: 'frown', meaning: 'a facial expression indicating sadness', emoji: '☹️'},
+    {word: 'dais', meaning: 'a raised platform', emoji: '🛏️'},
+    {word: 'echo', meaning: 'to repeat a sound', emoji: '🔊'},
+    {word: 'frown', meaning: 'a facial expression indicating displeasure', emoji: '☹️'},
     {word: 'glitter', meaning: 'to sparkle', emoji: '✨'},
-    {word: 'gratitude', meaning: 'feeling thankful', emoji: '🙏'},
-    {word: 'hug', meaning: 'an act of holding somebody tightly', emoji: '🫂'},
+    {word: 'gratitude', meaning: 'feeling thankful and appreciative', emoji: '🙏'},
+    {word: 'hug', meaning: 'an act of holding somebody tightly to show love', emoji: '🫂'},
+    {word: 'humming', meaning: 'making a low, continuous sound with closed lips', emoji: '🎶'},
     {word: 'hurry', meaning: 'to move quickly', emoji: '🏃'},
-    {word: 'lend a hand', meaning: 'to offer help', emoji: '🤝'},
-    {word: 'lullaby', meaning: 'cradle song', emoji: '🎶'},
-    {word: 'murmur', meaning: 'to speak in a low voice', emoji: '🗣️'},
+    {word: 'introduce', meaning: 'to make known to others for the first time', emoji: '🤝'},
+    {word: 'lullaby', meaning: 'cradle song', emoji: '🎵'},
+    {word: 'murmur', meaning: 'to speak in a low, soft voice', emoji: '🗣️'},
     {word: 'peep', meaning: 'to look secretly', emoji: '👀'},
+    {word: 'rush', meaning: 'to move quickly', emoji: '💨'},
     {word: 'surprise', meaning: 'something unexpected', emoji: '😲'},
     {word: 'tender', meaning: 'soft', emoji: '🌸'},
     {word: 'wipe', meaning: 'to clean', emoji: '🧻'}
 ];
 
 const QUIZ_DATA = {
-    tender: [
-        {q: "What was father making in the kitchen?", opts: ["Dosa", "Idli", "Unniyappam", "Cake"], ans: 2},
-        {q: "Who was Sasha's friend at school?", opts: ["Naveen", "Kabitha", "Rinku", "Anu"], ans: 0},
-        {q: "What did Kabitha do when Sasha offered the snack?", opts: ["Ate it", "Said thank you", "Ran away into bushes", "Cried"], ans: 2},
-        {q: "What gift did Sasha give to Kabitha later?", opts: ["A toy", "A picture story book", "A dress", "A bag"], ans: 1}
+    tender_touch: [
+        {q: "What was Sasha's favourite snack?", opts: ["Dosa", "Idli", "Unniyappam", "Vada"], ans: 2},
+        {q: "Who was singing a lullaby near the tree?", opts: ["Sasha", "Naveen", "Anupama teacher", "Kabitha"], ans: 3},
+        {q: "What did Sasha give to Kabitha?", opts: ["A dress", "A picture story book", "Unniyappam", "A pen"], ans: 1},
+        {q: "Why did Kabitha smile with tears in her eyes?", opts: ["She was sad", "She was angry", "She was full of gratitude", "She was hurt"], ans: 2}
     ],
-    friends: [
-        {q: "What does the poem say about 'your turn'?", opts: ["Don't wait", "Then my turn", "No turns", "Run away"], ans: 1},
-        {q: "What should we say when we share?", opts: ["Sorry", "Please", "Thank you", "Goodbye"], ans: 2},
-        {q: "Sharing is _______.", opts: ["caring", "bad", "hard", "funny"], ans: 0}
+    boy_and_bird: [
+        {q: "Where did Rinku hear the bird's cry from?", opts: ["A branch", "A pile of dry leaves", "The roof", "The sky"], ans: 1},
+        {q: "What animal did Rinku chase away?", opts: ["A dog", "A snake", "A cat", "A monkey"], ans: 2},
+        {q: "Where did Rinku put the baby bird while climbing the tree?", opts: ["In his bag", "In his hand", "In his pocket", "On his head"], ans: 2},
+        {q: "Why couldn't Rinku see the mother bird?", opts: ["It was dark", "The mother bird flew away", "He was blind", "He closed his eyes"], ans: 2}
     ],
-    bird: [
-        {q: "Who was Rinku waiting for?", opts: ["His mother", "His father", "His friend", "The bus"], ans: 1},
-        {q: "Where was the baby bird hidden?", opts: ["In the bag", "In a hole", "In a pile of dry leaves", "On the roof"], ans: 2},
-        {q: "Why did Rinku throw a stone?", opts: ["To hit a dog", "To chase away a cat", "To get a mango", "Just for fun"], ans: 1},
-        {q: "What was sad about the mother bird?", opts: ["She was deaf", "She was blind", "She couldn't fly", "She had no food"], ans: 1}
+    lets_be_friends: [
+        {q: "What should we say when we share?", opts: ["Sorry", "Thank you", "Goodbye", "Please"], ans: 1},
+        {q: "What is sharing?", opts: ["Caring", "Boring", "Sad", "Angry"], ans: 0}
     ]
 };
 
 const SEQ_EVENTS = [
     {text: "Sasha's father made unniyappam.", order: 1},
     {text: "Naveen noticed a girl next to the window.", order: 2},
-    {text: "Sasha and Naveen saw Kabitha cradling her brother.", order: 3},
+    {text: "Sasha and Naveen spotted Kabitha near a tree.", order: 3},
     {text: "Sasha gave a picture story book to Kabitha.", order: 4},
-    {text: "The headmaster introduced Kabitha in the assembly.", order: 5}
+    {text: "The headmaster congratulated Sasha and Naveen.", order: 5}
 ];
 
-function showScreen(id){playSound('click');if('speechSynthesis'in window)window.speechSynthesis.cancel();document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));const t=document.getElementById(id);if(t)t.classList.add('active');if(id==='modelQPScreen')renderModelQP();if(id==='unitQPScreen')renderUnitQP();}
-function openChoose(section){state.currentSection=section;state.lastChooseSection=section;document.getElementById('chooseTitle').innerText=SECTION_TITLES[section]||'Choose a Lesson';const list=document.getElementById('chooseList');list.innerHTML='';LESSONS.forEach(L=>{const d=document.createElement('div');d.className='lesson-pick';d.innerHTML=`<div class="lp-emoji">${L.emoji}</div><div><div class="lp-title">${L.title}</div><div class="lp-sub">${L.sub}</div></div>`;d.onclick=()=>selectLesson(L.id);list.appendChild(d)});showScreen('chooseScreen')}
-function selectLesson(lessonId){state.currentLesson=lessonId;state.visited[state.currentSection+'_'+lessonId]=true;if(state.currentSection==='games'){openGamesMenu(lessonId);return}renderContentFor(state.currentSection,lessonId)}
-function goBackFromContent(){if(state.lastChooseSection)openChoose(state.lastChooseSection);else showScreen('homeScreen')}
+function showScreen(id){
+    playSound('click');
+    if('speechSynthesis'in window)window.speechSynthesis.cancel();
+    if(currentAudio){currentAudio.pause();currentAudio=null;}
+    document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+    const t=document.getElementById(id);
+    if(t)t.classList.add('active');
+    if(id==='modelQPScreen')renderModelQP();
+    if(id==='unitQPScreen')renderUnitQP();
+}
+
+function openChoose(section){
+    state.currentSection=section;
+    state.lastChooseSection=section;
+    document.getElementById('chooseTitle').innerText=SECTION_TITLES[section]||'Choose a Lesson';
+    const list=document.getElementById('chooseList');
+    list.innerHTML='';
+    LESSONS.forEach(L=>{
+        const d=document.createElement('div');
+        d.className='lesson-pick';
+        d.innerHTML=`<div class="lp-emoji">${L.emoji}</div><div><div class="lp-title">${L.title}</div><div class="lp-sub">${L.sub}</div></div>`;
+        d.onclick=()=>selectLesson(L.id);
+        list.appendChild(d)
+    });
+    showScreen('chooseScreen')
+}
+
+function selectLesson(lessonId){
+    state.currentLesson=lessonId;
+    state.visited[state.currentSection+'_'+lessonId]=true;
+    if(state.currentSection==='games'){
+        openGamesMenu(lessonId);
+        return;
+    }
+    renderContentFor(state.currentSection,lessonId)
+}
+
+function goBackFromContent(){
+    if(state.lastChooseSection)openChoose(state.lastChooseSection);
+    else showScreen('homeScreen');
+}
 
 function openGamesMenu(lessonId){
     const L=LESSONS.find(x=>x.id===lessonId);
@@ -402,16 +588,18 @@ function renderContentFor(section,lessonId){
     else if(section==='quiz') renderQuiz(body,lessonId);
     else if(section==='vocab') renderVocab(body);
     else if(section==='recast') renderRecast(body, lessonId);
-    else if(section==='diary') renderDiary(body, lessonId);
+    else if(section==='kitchen') renderKitchen(body);
+    else if(section==='poem_complete') renderPoemComplete(body);
+    else if(section==='rhyming') renderRhyming(body);
 
     showScreen('contentScreen');
 }
 
 function renderRead(body,lessonId){
     let lines=[],qa=[],title='';
-    if(lessonId==='tender'){lines=STORY_TENDER;qa=QA_TENDER;title='Tender Touch';}
-    else if(lessonId==='friends'){lines=POEM_FRIENDS;title='Let\'s Be Friends';}
-    else if(lessonId==='bird'){lines=STORY_BIRD;qa=QA_BIRD;title='The Boy and the Bird';}
+    if(lessonId==='tender_touch'){lines=STORY_TENDER_TOUCH;qa=QA_TENDER_TOUCH;title='Tender Touch';}
+    else if(lessonId==='boy_and_bird'){lines=STORY_BOY_BIRD;qa=QA_BOY_BIRD;title='The Boy and the Bird';}
+    else if(lessonId==='lets_be_friends'){lines=POEM_FRIENDS;title='Let\'s be Friends';}
 
     let html = `<div class="story-title-wrap"><span class="story-title">${title}</span></div><button class="read-all-btn" id="readAllBtn">🔊 Read All / Stop</button><div id="storyParas"></div>`;
     if(qa && qa.length > 0) {
@@ -439,9 +627,18 @@ function renderRead(body,lessonId){
 
     let reading=false;
     document.getElementById('readAllBtn').onclick=function(){
-        if(reading){window.speechSynthesis.cancel();reading=false;return}
-        reading=true;let i=0;
-        function next(){if(i>=lines.length||!reading){reading=false;return}speakText(lines[i],()=>{i++;next()})}
+        if(reading){
+            window.speechSynthesis.cancel();
+            if(currentAudio) { currentAudio.pause(); currentAudio=null; }
+            reading=false;
+            return;
+        }
+        reading=true;
+        let i=0;
+        function next(){
+            if(i>=lines.length||!reading){reading=false;return}
+            speakText(lines[i],()=>{i++;next()})
+        }
         next();
     }
 }
@@ -460,53 +657,44 @@ function renderLearn(body,lessonId){
 }
 
 function renderActivities(body,lessonId){
-    if(lessonId === 'friends') {
+    if(lessonId === 'tender_touch') {
         body.innerHTML = `
-        <div class="activity-heading">📝 Activity: Rhyming Words</div>
+        <div class="activity-heading">💭 Sasha's Thoughts</div>
         <div class="activity-block">
-            <p>Match the rhyming words from the poem:</p>
-            <p>frown - <select class="fillbox a-fill" data-ans="down"><option value="">?</option><option value="down">down</option><option value="gold">gold</option></select></p>
-            <p>hold - <select class="fillbox a-fill" data-ans="gold"><option value="">?</option><option value="gold">gold</option><option value="hand">hand</option></select></p>
-            <p>understand - <select class="fillbox a-fill" data-ans="hand"><option value="">?</option><option value="hand">hand</option><option value="down">down</option></select></p>
-            <button class="check-btn" onclick="genericCheck('a-fill','aRes')">Check</button><div id="aRes" class="result-msg"></div>
+            <p>Sasha offered an unniyappam to the girl. But the girl ran away. What could be Sasha's feelings?</p>
+            <textarea class="write-box" placeholder="Why did she run away?"></textarea>
+            <button class="reveal-model-btn" onclick="revealModel('thoughtModel',this)">💡 Show Model</button>
+            <div class="model-answer-box" id="thoughtModel">Why did she run away? Is she scared of us? She looks so tired and hungry. Her clothes are torn. I wish she had taken the unniyappam. I must help her somehow.</div>
         </div>
-        <div class="activity-heading">📝 Activity: Similes</div>
+        <div class="activity-heading">💬 Write a conversation</div>
         <div class="activity-block">
-            <p>My friend is like a butterfly <select class="fillbox a-fill2" data-ans="fluttering"><option value="">?</option><option value="fluttering">fluttering</option><option value="dancing">dancing</option></select> in the garden.</p>
-            <p>My friend is like a star <select class="fillbox a-fill2" data-ans="shining"><option value="">?</option><option value="shining">shining</option><option value="swaying">swaying</option></select> in the sky.</p>
-            <p>My friend is like a boat <select class="fillbox a-fill2" data-ans="floating"><option value="">?</option><option value="floating">floating</option><option value="blooming">blooming</option></select> on the river.</p>
-            <button class="check-btn" onclick="genericCheck('a-fill2','aRes2')">Check</button><div id="aRes2" class="result-msg"></div>
-        </div>`;
-    } else if(lessonId === 'tender') {
-        body.innerHTML = `
-        <div class="activity-heading">📝 Activity: Kitchen Items</div>
-        <div class="activity-block">
-            <p>Classify these items: spoon, banana, salt, knife, pressure cooker, egg</p>
-            <br>
-            <p><b>Kitchen Utensils:</b> <input type="text" class="fillbox a-fill3" data-ans="spoon, knife, pressure cooker" placeholder="..."></p>
-            <p><b>Food Items / Ingredients:</b> <input type="text" class="fillbox a-fill3" data-ans="banana, salt, egg" placeholder="..."></p>
-            <button class="check-btn" onclick="genericCheck('a-fill3','aRes3')">Check (Type exactly)</button><div id="aRes3" class="result-msg"></div>
-        </div>
-        <div class="activity-heading">💬 Activity: Conversation</div>
-        <div class="activity-block">
-            <p>Sasha told Anu teacher about Kabitha. Write the conversation.</p>
+            <p>Write the conversation between Sasha and Anu teacher about Kabitha.</p>
             <textarea class="write-box" placeholder="Sasha: Teacher, on our way home we saw a girl..."></textarea>
             <button class="reveal-model-btn" onclick="revealModel('convModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="convModel">Sasha: Teacher, on our way home we saw a girl.<br>Teacher: Really? What was she doing?<br>Sasha: She was cradling her little brother and singing your song. She had torn clothes.<br>Teacher: Oh, poor girl. Where does she live?<br>Sasha: Near the big tree. Can we help her?<br>Teacher: Yes, I will talk to the Headmaster.</div>
+            <div class="model-answer-box" id="convModel">Sasha: Teacher, on our way home we saw a girl.<br>Teacher: Oh! Who was it?<br>Sasha: We don't know her name. She looked very tired and her clothes were torn.<br>Teacher: Where did you see her?<br>Sasha: We saw her sitting under a tree, singing a lullaby.<br>Teacher: Don't worry, Sasha. We will find her and help her.</div>
+        </div>`;
+    } else if (lessonId === 'boy_and_bird') {
+        body.innerHTML = `
+        <div class="activity-heading">📝 Describe the Scene</div>
+        <div class="activity-block">
+            <p>Write three sentences about how Rinku saved the bird.</p>
+            <textarea class="write-box" placeholder="Rinku heard a cry..."></textarea>
+            <button class="reveal-model-btn" onclick="revealModel('birdModel',this)">💡 Show Model</button>
+            <div class="model-answer-box" id="birdModel">Rinku heard the cry of a little bird from dry leaves. He threw a stone at the cat to protect the bird. He carefully climbed the tree and placed the baby bird back in its nest.</div>
         </div>`;
     } else {
-        body.innerHTML = `<div class="activity-heading">📝 Activity: Describe the Picture</div>
+        body.innerHTML = `<div class="activity-heading">📝 Share and Care</div>
         <div class="activity-block">
-            <p>Imagine Rinku holding the baby bird under a tree. Write a description.</p>
-            <textarea class="write-box" placeholder="Rinku is holding..."></textarea>
-            <button class="reveal-model-btn" onclick="revealModel('descModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="descModel">Rinku is standing under a tall tree. He is holding a tiny yellow baby bird in his hands. The bird looks safe now. Rinku is looking up to find its nest.</div>
+            <p>List 3 things you like to share with your friends:</p>
+            <input type="text" class="fillbox" placeholder="1."><br><br>
+            <input type="text" class="fillbox" placeholder="2."><br><br>
+            <input type="text" class="fillbox" placeholder="3.">
         </div>`;
     }
 }
 
 function renderQuiz(body,lessonId){
-    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender'];
+    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender_touch'];
     state.quizSubmitted=false;
     body.innerHTML=`<div id="quizScoreBox" style="display:none" class="quiz-score-box"></div><div id="quizContainer"></div><div style="text-align:center"><button class="submit-quiz-btn" onclick="submitQuiz('${lessonId}')">✅ Submit Answers</button></div>`;
     const c=document.getElementById('quizContainer');
@@ -531,7 +719,7 @@ function renderQuiz(body,lessonId){
 function submitQuiz(lessonId){
     if(state.quizSubmitted)return;
     state.quizSubmitted=true;
-    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender'];
+    const quiz=QUIZ_DATA[lessonId] || QUIZ_DATA['tender_touch'];
     let score=0;
     quiz.forEach((item,qi)=>{
         const opts=document.querySelectorAll(`#qopts${qi} .quiz-opt`);
@@ -556,16 +744,16 @@ function renderVocab(body) {
 }
 
 function renderRecast(body, lessonId) {
-    if(lessonId === 'tender') {
+    if(lessonId === 'tender_touch') {
         body.innerHTML = `
-        <div class="activity-heading">📔 RECAST - The story in my words</div>
+        <div class="activity-heading">📔 RECAST - Narrate the story</div>
         <div class="activity-block">
-            <p>1. What did Sasha's father make? <input type="text" class="fillbox a-fill4" data-ans="unniyappam" placeholder="..."></p>
-            <p>2. Who did Sasha see near the door? <input type="text" class="fillbox a-fill4" data-ans="a girl" placeholder="..."></p>
-            <p>3. What did Sasha and Naveen hear? <input type="text" class="fillbox a-fill4" data-ans="a song" placeholder="..."></p>
-            <p>4. What did Sasha give Kabitha? <input type="text" class="fillbox a-fill4" data-ans="a book" placeholder="..."></p>
-            <p>5. What happened in the school assembly? <input type="text" class="fillbox a-fill4" data-ans="Kabitha was introduced" placeholder="..."></p>
-            <button class="check-btn" onclick="genericCheck('a-fill4','aRes4')">Check</button><div id="aRes4" class="result-msg"></div>
+            <p>1. What did Sasha's father make? <input type="text" class="fillbox a-fill3" data-ans="Unniyappam" placeholder="..."></p>
+            <p>2. Who did Sasha see near the door? <input type="text" class="fillbox a-fill3" data-ans="A girl" placeholder="..."></p>
+            <p>3. What did Sasha and Naveen hear on the way home? <input type="text" class="fillbox a-fill3" data-ans="A song" placeholder="..."></p>
+            <p>4. What did Sasha give Kabitha? <input type="text" class="fillbox a-fill3" data-ans="A picture story book" placeholder="..."></p>
+            <p>5. What happened in the school assembly? <input type="text" class="fillbox a-fill3" data-ans="Headmaster introduced Kabitha" placeholder="..."></p>
+            <button class="check-btn" onclick="genericCheck('a-fill3','aRes3')">Check</button><div id="aRes3" class="result-msg"></div>
         </div>
         `;
     } else {
@@ -573,52 +761,79 @@ function renderRecast(body, lessonId) {
     }
 }
 
-function renderDiary(body, lessonId) {
-    if (lessonId === 'tender') {
-        body.innerHTML = `
-        <div class="activity-heading">💭 Sasha's Thoughts</div>
-        <div class="activity-block">
-            <p>Sasha offered an unniyappam to the girl. But the girl ran away without accepting it. What could be Sasha's feelings?</p>
-            <textarea class="write-box" placeholder="Write Sasha's thoughts..."></textarea>
-            <button class="reveal-model-btn" onclick="revealModel('thoughtModel',this)">💡 Show Model</button>
-            <div class="model-answer-box" id="thoughtModel">Why did she run away? Is she scared of me? She looks so hungry and tired in her torn clothes. I really wanted to share my snack with her. I hope I can see her again and help her.</div>
-        </div>`;
-    } else {
-        body.innerHTML = `<div class="activity-heading">Please select 'Tender Touch' story for Diary activity.</div>`;
-    }
+function renderKitchen(body) {
+    body.innerHTML = `
+    <div class="activity-heading">🍽️ Kitchen Items</div>
+    <div class="activity-block">
+        <p>Classify into Utensils and Food Items:</p>
+        <p>spoon, egg, plate, banana, knife, tomato, pan, rice</p>
+        <br>
+        <p><b>Utensils:</b> <input type="text" class="fillbox a-fill4" data-ans="spoon, plate, knife, pan" placeholder="..."></p>
+        <p><b>Food Items:</b> <input type="text" class="fillbox a-fill4" data-ans="egg, banana, tomato, rice" placeholder="..."></p>
+        <button class="check-btn" onclick="genericCheck('a-fill4','aRes4')">Check (Type exactly)</button><div id="aRes4" class="result-msg"></div>
+    </div>
+    `;
+}
+
+function renderPoemComplete(body) {
+     body.innerHTML = `
+    <div class="activity-heading">✍️ Complete the Poem</div>
+    <div class="activity-block">
+        <p>Use words: fluttering, dancing, swaying</p>
+        <br>
+        <p>My friend is like a butterfly<br><input type="text" class="fillbox a-fill6" data-ans="fluttering"> in the garden.</p>
+        <p>My friend is like a peacock<br><input type="text" class="fillbox a-fill6" data-ans="dancing"> in the woods.</p>
+        <p>My friend is like a tree<br><input type="text" class="fillbox a-fill6" data-ans="swaying"> in the wind.</p>
+        <button class="check-btn" onclick="genericCheck('a-fill6','aRes6')">Check</button><div id="aRes6" class="result-msg"></div>
+    </div>
+    `;
+}
+
+function renderRhyming(body) {
+    body.innerHTML = `
+    <div class="activity-heading">🔤 Rhyming Words</div>
+    <div class="activity-block">
+        <p>Match the rhyming words (down, gold, understand):</p>
+        <br>
+        <p>frown - <input type="text" class="fillbox a-fill5" data-ans="down"></p>
+        <p>hold - <input type="text" class="fillbox a-fill5" data-ans="gold"></p>
+        <p>hand - <input type="text" class="fillbox a-fill5" data-ans="understand"></p>
+        <button class="check-btn" onclick="genericCheck('a-fill5','aRes5')">Check</button><div id="aRes5" class="result-msg"></div>
+    </div>
+    `;
 }
 
 function renderModelQP(){
     document.getElementById('modelQPContainer').innerHTML=`
-    <div style="text-align:center;margin-bottom:18px"><h2 style="color:#C2185B;font-size:1.4rem">Model Question Paper</h2><div class="ml">യൂണിറ്റ് 1 • Tender Touch</div><div style="font-size:.95rem;color:#555;margin-top:6px">Max Marks: 30 | Time: 45 minutes</div></div>
+    <div style="text-align:center;margin-bottom:18px"><h2 style="color:#00BCD4;font-size:1.4rem">Model Question Paper</h2><div class="ml">യൂണിറ്റ് 1 • Tender Touch</div><div style="font-size:.95rem;color:#555;margin-top:6px">Max Marks: 30 | Time: 45 minutes</div></div>
     <div class="qp-section">
         <div class="qp-heading">I. Choose the correct answer – 5 × 1 = 5</div>
-        <div class="qp-q"><span class="qnum">1.</span> Who was cooking unniyappam in the kitchen?<br>(a) Mother (b) Father (c) Sasha (d) Naveen</div>
-        <div class="qp-q"><span class="qnum">2.</span> What did Sasha give Kabitha as a gift?<br>(a) Food (b) Dress (c) Picture story book (d) Toy</div>
-        <div class="qp-q"><span class="qnum">3.</span> What sound did Rinku hear from the dry leaves?<br>(a) Meow (b) Keeyo (c) Bow-wow (d) Moo</div>
-        <div class="qp-q"><span class="qnum">4.</span> Why couldn't the mother bird see the baby bird?<br>(a) It was dark (b) She flew away (c) She was blind (d) The baby hid</div>
-        <div class="qp-q"><span class="qnum">5.</span> Sharing is _______.<br>(a) bad (b) crying (c) caring (d) loud</div>
+        <div class="qp-q"><span class="qnum">1.</span> Who made unniyappam for Sasha?<br>(a) Mother (b) Father (c) Naveen (d) Kabitha</div>
+        <div class="qp-q"><span class="qnum">2.</span> Kabitha was singing a _______ near the tree.<br>(a) film song (b) poem (c) lullaby (d) prayer</div>
+        <div class="qp-q"><span class="qnum">3.</span> What did Rinku throw at the cat?<br>(a) Stick (b) Fruit (c) Stone (d) Ball</div>
+        <div class="qp-q"><span class="qnum">4.</span> Rhyming word for 'hold' is _______.<br>(a) hand (b) cold (c) gold (d) down</div>
+        <div class="qp-q"><span class="qnum">5.</span> Rinku was a _______ boy.<br>(a) deaf (b) blind (c) lame (d) dumb</div>
     </div>
     <div class="qp-section">
-        <div class="qp-heading">II. Classify the items – 4 × 1 = 4</div>
-        <div class="qp-q">Classify into Kitchen Utensils or Food Items:<br>Spoon, Banana, Knife, Egg.</div>
+        <div class="qp-heading">II. Classify into Utensils and Food Items – 4 × 1 = 4</div>
+        <div class="qp-q">Spoon, Egg, Plate, Banana.</div>
     </div>
     <div class="qp-section">
-        <div class="qp-heading">III. Write the missing word – 3 × 1 = 3</div>
-        <div class="qp-q">1. My friend is like a star _______ in the sky.<br>2. My friend is like a butterfly _______ in the garden.<br>3. Sharing is caring, that's what we _______!</div>
+        <div class="qp-heading">III. Write the missing rhyming words – 2 × 1 = 2</div>
+        <div class="qp-q">1. frown - _______ <br>2. hand - _______</div>
     </div>
     <div class="qp-section">
         <div class="qp-heading">IV. Answer briefly – 4 × 2 = 8</div>
-        <div class="qp-q"><span class="qnum">1.</span> Why did Kabitha run away from the window?</div>
-        <div class="qp-q"><span class="qnum">2.</span> What did Rinku do to save the bird from the cat?</div>
-        <div class="qp-q"><span class="qnum">3.</span> Why did the headmaster call Sasha and Naveen to the dais?</div>
-        <div class="qp-q"><span class="qnum">4.</span> Write a short thought of Sasha when she saw the girl in torn clothes.</div>
+        <div class="qp-q"><span class="qnum">1.</span> Why did Sasha rush to the kitchen?</div>
+        <div class="qp-q"><span class="qnum">2.</span> How did Rinku save the bird?</div>
+        <div class="qp-q"><span class="qnum">3.</span> What did Sasha give Kabitha?</div>
+        <div class="qp-q"><span class="qnum">4.</span> Why did Kabitha smile with tears in her eyes?</div>
     </div>
     <button class="reveal-model-btn" style="width:100%;margin-top:10px" onclick="revealModel('qpAnswers',this)">💡 Show Answer Key</button>
     <div class="model-answer-box" id="qpAnswers">
-        I. 1(b), 2(c), 3(b), 4(c), 5(c)<br>
-        II. Utensils: Spoon, Knife | Food Items: Banana, Egg<br>
-        III. 1. shining 2. fluttering 3. do<br>
+        I. 1(b), 2(c), 3(c), 4(c), 5(b)<br>
+        II. Utensils: Spoon, Plate | Food: Egg, Banana<br>
+        III. 1. down 2. understand<br>
         IV. (Descriptive answers based on text)
     </div>`;
 }
@@ -633,21 +848,21 @@ function renderUnitQP(){
         <div class="qp-act">
             <div class="qp-act-h">Activity 1: Read and Answer (4 Marks)</div>
             <p>Read the passage and answer the questions.</p>
-            <p><i>Sasha and Naveen spotted the girl near a tree. She was cradling her little brother, singing the song. "How quickly has she learnt the song!" Naveen whispered to Sasha. The girl saw them and smiled. Sasha wanted to give the girl a gift.</i></p>
+            <p><i>Sasha and Naveen spotted the girl near a tree. She was cradling her little brother, singing the song. The girl saw them and smiled. She tried to comb her dry hair with her fingers. Sasha opened her bag and took out a book. "Here's a gift for you," Sasha handed it over to her.</i></p>
             <br>
             <p>1. Where did Sasha and Naveen spot the girl?</p>
             <div class="qp-lines"></div>
-            <p>2. What was the girl doing?</p>
+            <p>2. What was the girl doing with her little brother?</p>
             <div class="qp-lines"></div>
-            <p>3. What did Naveen whisper to Sasha?</p>
+            <p>3. What did Sasha give to the girl?</p>
             <div class="qp-lines"></div>
-            <p>4. What did Sasha want to give the girl?</p>
+            <p>4. How did the girl react to the gift?</p>
             <div class="qp-lines"></div>
         </div>
 
         <div class="qp-act">
-            <div class="qp-act-h">Activity 2: Write thoughts (4 Marks)</div>
-            <p>Rinku carefully placed the baby bird back in the nest. The mother bird looked at him thankfully, even though she was blind. What would be Rinku's thoughts then?</p>
+            <div class="qp-act-h">Activity 2: Write a Conversation (4 Marks)</div>
+            <p>Write a short conversation between Sasha and Kabitha when Sasha gives her the book.</p>
             <div class="qp-lines"></div>
             <div class="qp-lines"></div>
             <div class="qp-lines"></div>
@@ -657,13 +872,20 @@ function renderUnitQP(){
             <div class="qp-act-h">Activity 3: Complete the poem (4 Marks)</div>
             <p>Let's be friends, let's ________ together</p>
             <p>Having fun, all ________.</p>
-            <p>Your turn, then my ________</p>
-            <p>Let's ________, and say 'Thank you'.</p>
+            <p>Your turn, then ________ turn</p>
+            <p>Sharing is ________, that's what we do!</p>
         </div>
 
         <div class="qp-act">
-            <div class="qp-act-h">Activity 4: Describe the picture (4 Marks)</div>
-            <p>Write 3 sentences about a picture where a girl is helping an old man cross the road.</p>
+            <div class="qp-act-h">Activity 4: Classify the items (4 Marks)</div>
+            <p>Put the words in correct group: (spoon, egg, knife, tomato)</p>
+            <p><b>Kitchen Utensils:</b> 1. ________  2. ________</p>
+            <p><b>Food Items:</b> 1. ________ 2. ________</p>
+        </div>
+
+        <div class="qp-act">
+            <div class="qp-act-h">Activity 5: Describe the picture (4 Marks)</div>
+            <p>Write 3 sentences about Sasha watching Kabitha near the window.</p>
             <div class="qp-lines"></div>
             <div class="qp-lines"></div>
             <div class="qp-lines"></div>
@@ -673,12 +895,15 @@ function renderUnitQP(){
     `;
 }
 
-// Game 7 Logic (Sequence)
-let g7Seq, g7Selected = [];
+// GAMES LOGIC
 function launchGame(num){
     showScreen('game'+num+'Screen');
     if(num===7) initGame7();
+    if(num===8) initGame8();
+    if(num===10) initGame10();
 }
+
+let g7Seq, g7Selected = [];
 
 function initGame7(){
     const list = [...SEQ_EVENTS].sort(()=>Math.random()-.5);
@@ -733,6 +958,66 @@ function checkSequence(){
         r.innerText = "Not quite right. Try again!";
         playSound('wrong');
     }
+}
+
+function initGame8(){
+    const qData = [
+        {q: "Sasha, your favourite snack is ready.", o: ["Father", "Naveen"], a: 0},
+        {q: "Just five minutes!", o: ["Kabitha", "Sasha"], a: 1},
+        {q: "I have seen her somewhere.", o: ["Naveen", "Mother"], a: 0},
+        {q: "Let's welcome her.", o: ["Teacher", "Headmaster"], a: 1}
+    ];
+    const item = qData[Math.floor(Math.random()*qData.length)];
+    document.getElementById('g8QuoteBox').innerText = `"${item.q}"`;
+    const opts = document.getElementById('g8OptionsGrid');
+    opts.innerHTML = '';
+    item.o.forEach((opt, idx) => {
+        const b = document.createElement('button');
+        b.className = 'option-btn';
+        b.innerText = opt;
+        b.onclick = () => {
+            if(idx === item.a){
+                b.classList.add('correct');
+                playSound('correct');
+                setTimeout(()=> {showRewardModal(); initGame8();}, 1500);
+            } else {
+                b.classList.add('wrong');
+                playSound('wrong');
+                setTimeout(()=>b.classList.remove('wrong'), 800);
+            }
+        };
+        opts.appendChild(b);
+    });
+}
+
+function initGame10(){
+    const qData = [
+        {q: "Sasha's favourite snack is ____.", o: ["unniyappam", "dosa"], a: 0},
+        {q: "Kabitha's clothes were ____.", o: ["new", "torn"], a: 1},
+        {q: "Rinku put the bird in his ____.", o: ["pocket", "bag"], a: 0},
+        {q: "Sharing is ____.", o: ["boring", "caring"], a: 1}
+    ];
+    const item = qData[Math.floor(Math.random()*qData.length)];
+    document.getElementById('g10SentBox').innerText = item.q;
+    const opts = document.getElementById('g10OptionsGrid');
+    opts.innerHTML = '';
+    item.o.forEach((opt, idx) => {
+        const b = document.createElement('button');
+        b.className = 'option-btn';
+        b.innerText = opt;
+        b.onclick = () => {
+            if(idx === item.a){
+                b.classList.add('correct');
+                playSound('correct');
+                setTimeout(()=> {showRewardModal(); initGame10();}, 1500);
+            } else {
+                b.classList.add('wrong');
+                playSound('wrong');
+                setTimeout(()=>b.classList.remove('wrong'), 800);
+            }
+        };
+        opts.appendChild(b);
+    });
 }
 
 window.onload=function(){
